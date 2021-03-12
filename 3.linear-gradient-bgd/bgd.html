@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="bgd">
+
+	</div>
+	
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100vw;
+			height: 100vh;
+			
+		}
+
+		.bgd {
+			background: linear-gradient(135deg, #C6FFDD, #FBD786, #f7797d, #ee9ca7, #ffdde1);
+			width: 100%;
+			height: 100%;
+			background-size: 200% 200%;
+			animation-name: move;
+			animation-duration: 20s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		@keyframes move {
+			0% {
+				background-position: 0% 0%;
+			}
+
+			/* 水平往右 */
+			25% {
+				background-position: 100% 0%;
+			}
+
+			/* 竖直向下 */
+			50% {
+				background-position: 100% 100%;
+			}
+
+			/* 水平向左 */
+			75% {
+				background-position: 0% 100%;
+			}
+
+			/* 竖直向上回归原点 */
+			100% {
+				background-position: 0% 0%;
+			}
+		}
+	</style>
+</body>
+</html>
