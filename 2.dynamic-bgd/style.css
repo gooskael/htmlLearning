@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.img-box {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+}
+
+#bgd-1 {
+	background-image: url('/images/2-1.png');
+	/* background: rgba(255,0,0,0.5); */
+	z-index: -1;
+
+	animation-name: diybgd;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	animation-direction: alternate;
+}
+
+#bgd-2 {
+	background-image: url('/images/2-2.png');
+	/* background: rgba(0,255,0,0.5); */
+	z-index: -2;
+	animation-name: diybgd-2;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	animation-direction: alternate;
+}
+
+#bgd-3 {
+	background-image: url('/images/2-3.png');
+	/* background: rgba(0,0,255,0.5); */
+	z-index: -3;
+}
+
+@keyframes diybgd {
+	25% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes diybgd-2 {
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
