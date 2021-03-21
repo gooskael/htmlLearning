@@ -186,5 +186,4 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   /* keep the [0%] attributes before the translation */
   animation-fill-mode: backwards;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
